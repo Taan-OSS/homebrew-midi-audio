@@ -20,11 +20,14 @@ bash /tmp/midi-audio-install.sh
 Alternatively, after reviewing and accepting the terms:
 
 ```sh
+brew tap Taan-OSS/midi-audio
+# Newer Homebrew versions require explicit trust of this one cask:
+brew trust --cask taan-oss/midi-audio/midi-audio
 brew install --cask Taan-OSS/midi-audio/midi-audio
 ```
 
-If Homebrew asks you to trust the third-party tap, review this repository first
-and follow its prompt. An administrator password is needed for system installation.
+Review this repository before trusting the cask. If an older Homebrew reports
+that `trust` is an unknown command, skip that line; the helper detects it automatically. An administrator password is needed for system installation.
 
 **Homebrew is not a Gatekeeper bypass.** Version 0.2.2 is ad-hoc signed but has
 no Developer ID signature or Apple notarization. If macOS blocks it, try opening

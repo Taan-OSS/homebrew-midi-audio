@@ -2,14 +2,13 @@ cask "midi-audio" do
   version "0.2.2"
   sha256 "2665f85c36e530496a6d56385f888b6faa5a1582cdd6ea64c7d0dfd5d8db85e1"
 
-  url "https://github.com/Taan-OSS/homebrew-midi-audio/releases/download/v#{version}/midi-audio-#{version}-macos-arm64-unsigned-beta.pkg",
-      verified: "github.com/Taan-OSS/homebrew-midi-audio/"
+  url "https://github.com/Taan-OSS/homebrew-midi-audio/releases/download/v#{version}/midi-audio-#{version}-macos-arm64-unsigned-beta.pkg"
   name "midi.audio"
   desc "Hosted MIDI-to-audio renderer with standalone, VST3 and Audio Unit clients"
   homepage "https://midi.audio/"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   pkg "midi-audio-#{version}-macos-arm64-unsigned-beta.pkg"
 

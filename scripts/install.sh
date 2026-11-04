@@ -14,4 +14,8 @@ open "$terms"
 printf 'After reading the terms, type AGREE to install (anything else cancels): ' >/dev/tty
 read -r answer </dev/tty
 [[ "$answer" == AGREE ]] || { echo "Cancelled; nothing installed."; exit 1; }
+brew tap Taan-OSS/midi-audio
+if brew help trust >/dev/null 2>&1; then
+  brew trust --cask taan-oss/midi-audio/midi-audio
+fi
 brew install --cask Taan-OSS/midi-audio/midi-audio
