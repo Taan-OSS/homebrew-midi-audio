@@ -9,7 +9,8 @@ runs on our hosted service; no GPU driver, Python, Docker or model download is n
 Install [Homebrew](https://brew.sh) first if needed. Close midi.audio and your DAWs.
 Read [the installation and collection terms](collection-terms.html) before installing.
 The terminal installer cannot show the graphical PKG agreement screen; our helper
-opens the terms and requires explicit acceptance:
+opens a readable copy of the terms in Safari. Return to Terminal, type `AGREE`
+and press Enter to start installation:
 
 ```sh
 curl -fL https://raw.githubusercontent.com/Taan-OSS/homebrew-midi-audio/main/scripts/install.sh -o /tmp/midi-audio-install.sh
